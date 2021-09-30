@@ -9,7 +9,6 @@
 
     <link rel="stylesheet" type="text/css" href="main.css">
 
-    <!-- <script src="https://cdn.jsdelivr.net/gh/ethereum/web3.js/dist/web3.min.js"></script> -->
 </head>
 
 <body>
@@ -24,107 +23,13 @@
         <button id="setMessageButton">Set message</button>
     </div>
 
-    <!-- <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"></script> -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
     <script src="js/bootstrap.min.js"></script>
     <script src="js/web3.min.js"></script>
     <script src="js/truffle-contract.js"></script>
     <script src="js/app.js"></script>
 
-    <script>
-        
-        // // Connect a the web3 provider
-        // // Metamask is the web3 provider. If you have it installed, then it's defined and will go to the else block.
-        // if (typeof web3 !== 'undefined') {
-        //     console.log('default web3');
-        //     web3 = new Web3(web3.currentProvider);
-        // } else {
-        //     // Just like how we would set the web3 provider endpoint on the Remix environment field
-        //     console.log('my web3');
-        //     web3 = new Web3(new Web3.providers.HttpProvider("https://ropsten.infura.io/v3/6e51863fffa84e40a35843166395dbd2"));
-        // }
-
-        // web3.eth.getAccounts().then(array => {
-            
-        //     // Set a default account
-        //     // This default address is used as the default "from" property, if no "from" property is specified in for the following methods:
-        //     // web3.eth.sendTransaction()
-        //     // web3.eth.call()
-        //     // new web3.eth.Contract() -> myContract.methods.myMethod().call()
-        //     // new web3.eth.Contract() -> myContract.methods.myMethod().send()
-        //     let accountAddress = array[0]; 
-        //     // These don't work
-        //     // web3.eth.defaultAccount = accountAddress;
-        //     // web3.eth.Conttract.defaultAccount = accountAddress;
-
-        //     let messageContract = TruffleContract(
-        //         // contract abi
-        //         [
-        //         {
-        //             "inputs": [],
-        //             "name": "getMessage",
-        //             "outputs": [
-        //                 {
-        //                     "internalType": "string",
-        //                     "name": "",
-        //                     "type": "string"
-        //                 }
-        //             ],
-        //             "stateMutability": "view",
-        //             "type": "function"
-        //         },
-        //         {
-        //             "inputs": [],
-        //             "name": "myMessage",
-        //             "outputs": [
-        //                 {
-        //                     "internalType": "string",
-        //                     "name": "",
-        //                     "type": "string"
-        //                 }
-        //             ],
-        //             "stateMutability": "view",
-        //             "type": "function"
-        //         },
-        //         {
-        //             "inputs": [
-        //                 {
-        //                     "internalType": "string",
-        //                     "name": "x",
-        //                     "type": "string"
-        //                 }
-        //             ],
-        //             "name": "setMessage",
-        //             "outputs": [],
-        //             "stateMutability": "nonpayable",
-        //             "type": "function"
-        //         }
-        //     ]
-        //     );
-        //     messageContract.setProvider(web3.currentProvider);
     
-        //     messageContract.deployed().then(function(instance) {
-                
-        //         console.log(instance);
-    
-        //         $("#setMessageButton").click(function () {
-        //             console.log($("#userInput").val())
-        
-        //             instance.setMessage($("#userInput").val())
-        //             .send((err, res) => {
-        //                 if (!err) {
-        //                     console.log(res);
-        //                 } else {
-        //                     console.log(err);
-        //                 }
-        //             });
-        //         });
-
-        //     });
-
-        // });
-
-    </script>
 </body>
 
 </html>
