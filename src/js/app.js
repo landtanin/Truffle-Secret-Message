@@ -12,7 +12,6 @@ App = {
 
         // Modern dapp browsers...
         if (window.ethereum) {
-            console.log("network 1");
             App.web3Provider = window.ethereum;
             try {
                 // Request account access
@@ -24,12 +23,10 @@ App = {
         }
         // Legacy dapp browsers...
         else if (window.web3) {
-            console.log("network 2");
             App.web3Provider = window.web3.currentProvider;
         }
         // If no injected web3 instance is detected, fall back to Ganache
         else {
-            console.log("network 3");
             App.web3Provider = new Web3.providers.HttpProvider('http://localhost:7545');
         }
         web3 = new Web3(App.web3Provider);
